@@ -57,3 +57,10 @@
     height: 128px;
     background-color: #ffaf00;
 }
+.container { display: flex;
+    background-color: #8A0041;
+    flex-direction:
+            column; height: 100vh; }
+header, footer { flex: 0 1 auto; background-color: #19f6ff}
+nav, main { flex: 1; background-color: #ff479e}
+aside { flex: 0 1 200px; background-color: #ffaf00}
