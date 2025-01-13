@@ -55,7 +55,7 @@ const Navbar = () => {
                                         <BtnLine href={'#contacts'}>
                                             <BtnMain text={'О нас'}/>
                                         </BtnLine>
-                                        <BtnLine href={'#room'}>
+                                        <BtnLine href={'#rooms'}>
                                             <BtnMain text={'Наши залы'}/>
                                         </BtnLine>
                                         <BtnLine href={'#works'}>
