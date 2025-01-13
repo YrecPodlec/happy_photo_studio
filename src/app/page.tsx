@@ -3,6 +3,7 @@ import {BtnForm, BtnLine, BtnLineStyle, ImageRel, Input} from "@/app/components/
 import {SetkaFourth, SetkaSixth, Slider, SliderTeam, StudioRooms, TakeDate} from "@/app/components/widgets";
 import Image from "next/image";
 import React from "react";
+import {Location} from "@/app/components/widgets/setkaFourth/setkaFourth";
 
 export default function Home() {
     return (
@@ -353,6 +354,7 @@ export default function Home() {
                 <section className={'grid gap-8'} id={'contacts'}>
                 <h1>Контакты</h1>
                     <section className={'flex gap-8 xxxs:flex-col'}>
+
                         <div className={'w-[30%] grid gap-8 xxxs:w-full'}>
                             <div className={'relative w-ful aspect-square'}>
                                 <Image
@@ -384,6 +386,7 @@ export default function Home() {
                             </div>
                         </div>
                     </section>
+                    <Location/>
                 </section>
 
             </section>

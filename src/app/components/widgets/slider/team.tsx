@@ -9,8 +9,8 @@ const SliderTeam = () => {
     return (
         <Pagination maxPage={Team.length - 1}>
             {(page) => (
-                <section className={'flex w-full gap-8 xxxs:gap-2'}>
-                    <div className="w-[30%] xs:w-[50%]">
+                <section className={'flex w-full gap-8 xxxs:gap-2 xxxs:flex-col'}>
+                    <div className="w-[30%] xs:w-[50%] xxxs:w-full">
                         {Team[page]?.image && (
                             <div className={'w-full h-[578px] relative xxxs:h-[360px] xxxxs:h-[220px]'}>
                                 <Image
@@ -23,7 +23,7 @@ const SliderTeam = () => {
                             </div>
                         )}
                     </div>
-                    <div className={'w-[70%] grid gap-8 xs:w-[50%] xxxs:gap-2'}>
+                    <div className={'w-[70%] grid gap-8 xs:w-[50%] xxxs:gap-2 xxxs:w-full'}>
                         {
                             Team[page] && (
                                 <div className={'grid gap-8 border-b-4 xxxs:gap-2 xxxxs:border-b-2'}>
