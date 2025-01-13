@@ -1,70 +1,7 @@
 import React from 'react';
 import {ImageRel} from "@/app/components/shared";
 import {Hover} from "@/app/components/widgets/StudioRooms/StudioRooms";
-import {Modal} from "@/app/components/features";
-
-export const Location = () => {
-    return(
-        <section className={'grid gap-8'}>
-            <div className={'flex gap-8 items-start xs:flex-col justify-center xs:items-center'}>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2230.3712653940497!2d92.8744385857898!3d56.012242671686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5cd7ae38f141c1bf%3A0xe88de8f8ea3cd651!2sMira%20Ave%2C%2049%2C%20Krasnoyarsk%2C%20Krasnoyarskiy%20kray%2C%20660049!5e0!3m2!1sen!2sru!4v1736776966863!5m2!1sen!2sru"
-                    loading="lazy"
-                    className={'w-2/6 xs:w-full h-96'}
-                    referrerPolicy="no-referrer-when-downgrade"></iframe>
-                <div className={'grid gap-16'}>
-                    <div className={'flex gap-8 text-center items-center xs:flex-col'}>
-                        <h1>Адрес:</h1>
-                        <p>
-                            г. Красноярск, проспект Мира, 49
-                        </p>
-                    </div>
-                    <div className={'flex gap-8 text-center items-center xs:flex-col'}>
-                        <h1>Время работы:</h1>
-                        <p>
-                            Понедельник - Воскресенье, 09:00 - 20:00
-                        </p>
-                    </div>
-                    <div className={'flex gap-8 text-center items-center xs:flex-col'}>
-                        <h1>Телефон и почта:</h1>
-                        <div>
-                            <p>
-                                +79-84-546-78-98
-                            </p>
-                            <p>
-                                happy-studio@gmail.com
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h1>Социальные сети:</h1>
-                <div className={'flex justify-center gap-8 flex-wrap'}>
-                    <a href="#">
-                        <img src="/media/1.png" alt="" className={'w-[64px]'}/>
-                    </a>
-                    <a href="#">
-                        <img src="/media/2.png" alt="" className={'w-[64px]'}/>
-                    </a>
-                    <a href="#">
-                        <img src="/media/3.png" alt="" className={'w-[64px]'}/>
-                    </a>
-                    <a href="#">
-                        <img src="/media/4.png" alt="" className={'w-[64px]'}/>
-                    </a>
-                    <a href="">
-                        <img src="/media/5.png" alt="" className={'w-[64px]'}/>
-                    </a>
-                    <a href="#">
-                        <img src="/media/6.png" alt="" className={'w-[64px]'}/>
-                    </a>
-                </div>
-            </div>
-        </section>
-    )
-}
+import {Location, Modal} from "@/app/components/features";
 
 const SetkaFourth = () => {
     const data = [
@@ -80,21 +17,131 @@ const SetkaFourth = () => {
             image: '/setkaFourth/2.jpg',
             title: 'История нашей студии',
             text: 'Узнайте историю нашей студии, о её становлении и ценностях',
-            children: <Location/>
+            children:
+                <section className={'flex gap-8 xxs:flex-col'}>
+                    <div className={'text-center grid h-fit gap-4'}>
+                        <img src="/studio.jpg" alt="" className={'object-bottom object-cover rounded-input'}/>
+                        <h1 className={'responsive-48'}>Алина Хондратьева</h1>
+                        <p>Основатель</p>
+                    </div>
+                    <p className={'w-3/4 xxs:w-full'}>
+                        Когда-то давно, в маленьком городе с яркими улицами и теплыми людьми, жила девушка по имени
+                        Алина. Она с детства обожала фотографировать. Камера, подаренная ей на 10-летие, стала ее
+                        постоянной спутницей. Алина умела видеть красоту даже в самых обыденных вещах: каплях дождя на
+                        окне, солнечных бликах на асфальте, улыбке незнакомца в толпе.
+                        <br/>
+                        <br/>
+                        С годами ее увлечение превратилось в страсть. Алина фотографировала друзей, родственников, а
+                        потом и вовсе незнакомых людей, которые просили ее запечатлеть важные моменты их жизни. Однажды
+                        ей пришла в голову идея — создать место, где каждый мог бы почувствовать себя особенным,
+                        красивым и счастливым. Так появилась мечта — открыть собственную фотостудию.
+                        <br/>
+                        <br/>
+                        Алина долго искала идеальное место. Ей хотелось, чтобы студия была наполнена светом, уютом и
+                        волшебством. Однажды она наткнулась на старое здание в самом сердце города. Его окна выходили на
+                        площадь, где весной цвели яблони, а зимой сверкали гирлянды. Помещение было заброшенным, стены
+                        потрескались, а потолок был украшен паутиной. Но Алина видела в этом месте потенциал.
+                        <br/>
+                        <br/>
+                        Несколько месяцев она трудилась над ремонтом. Вместе с друзьями красила стены, устанавливала
+                        оборудование, подбирала декорации. Главной идеей было создать пространство, которое могло бы
+                        менять образы, как хамелеон: сегодня это уютная гостиная для семейных фотосессий, завтра —
+                        сказочный лес для детских съемок, а послезавтра — строгая студия для деловых портретов.
+                        <br/>
+                        <br/>
+                        Название пришло случайно. Однажды вечером, когда друзья помогали Алине расставлять последние
+                        детали, кто-то сказал:
+                        — Алина, у тебя получилось настоящее счастье!
+                        Слово зацепилось, и студия стала называться Счастье.
+                        <br/>
+                        <br/>
+                        Когда студия открылась, она сразу привлекла внимание жителей города. Люди приходили сюда не
+                        только за фотографиями, но и за теплыми эмоциями. Для многих это место стало символом радости и
+                        вдохновения.
+                        <br/>
+                        <br/>
+                        Со временем фотостудия Счастье обрела свою магию. Считалось, что если сфотографироваться в
+                        ней, то сбываются самые заветные мечты. И пусть это было просто легендой, но все, кто приходил
+                        сюда, уходили с улыбкой и особенным светом в глазах.
+                        <br/>
+                        <br/>
+                        Так фотостудия Счастье стала не просто местом для съемок, а настоящей мастерской чудес, где
+                        каждый кадр рассказывал свою уникальную историю.
+                    </p>
+                </section>
         },
         {
             className: 'col-span-4',
             image: '/setkaFourth/3.jpg',
             title: 'Мероприятия',
             text: 'Мы часто проводим мероприятия, ознакомтесь в каких можете принять участие Вы!',
-            children: <Location/>
+            children:
+                <section className={'text-center'}>
+                    <p>В данный момент мероприятия не заплонированы :/</p>
+                    <p>Зайдите позже</p>
+                </section>
         },
         {
             className: 'col-span-4',
             image: '/setkaFourth/4.jpg',
             title: 'Отзывы',
             text: 'Мы ценим наших клиентов и принимаем обратную связь, узнайте что от нас думают другие',
-            children: <Location/>
+            children:
+                <section className={'grid grid-cols-4 xs:grid-cols-2 xxxs:grid-cols-1 gap-8 justify-center'}>
+                    <div className={'bg-gray-800 grid gap-4 p-8 rounded-input'}>
+                        <img src="/otzivy/1.jpg" alt=""
+                             className={'aspect-square object-cover w-1/2 mx-auto rounded-input'}/>
+                        <h1 className={'responsive-48'}>Кристина дятлова</h1>
+                        <p>
+                            Фотостудия Счастье — это не просто место, это
+                            настоящая магия! Как только заходишь, чувствуешь уют и
+                            тепло. Атмосфера здесь потрясающая, а каждая деталь продумана
+                            до мелочей. Фотографы словно читают мысли — получилось
+                            именно то, что я хотела. Ушла с фотографиями, которые
+                            теперь украшают мой дом, и с ощущением, что я была в
+                            сказке. Обязательно вернусь сюда снова!
+                        </p>
+                    </div>
+
+                    <div className={'bg-gray-800 grid gap-4 p-8 rounded-input'}>
+                        <img src="/otzivy/2.jpg" alt=""
+                             className={'aspect-square object-cover w-1/2 mx-auto rounded-input'}/>
+                        <h1 className={'responsive-48'}>Диана Хуанхенова</h1>
+                        <p>
+                            Я никогда не думала, что съемка может быть такой приятной и вдохновляющей! В
+                            фотостудии Счастье все продумано до мелочей — от декораций до работы
+                            команды. Меня встретили с улыбкой, помогли расслабиться, и уже через пару
+                            минут я забыла про камеру. Фотографии получились невероятно живыми и естественными,
+                            а время пролетело незаметно. Это место точно оправдывает свое название!
+                        </p>
+                    </div>
+
+                    <div className={'bg-gray-800 grid gap-4 p-8 rounded-input'}>
+                        <img src="/otzivy/3.jpg" alt=""
+                             className={'aspect-square object-cover w-1/2 mx-auto rounded-input'}/>
+                        <h1 className={'responsive-48'}>Мария Карипова</h1>
+                        <p>
+                            Это место, куда хочется возвращаться снова и снова. Здесь создают не просто
+                            фотографии, а настоящие воспоминания. Свет, декорации, подход фотографов — всё
+                            на высшем уровне! Я пришел за снимками для портфолио, а ушел с ощущением, что
+                            побывал на встрече с давними друзьями. Атмосфера заряжает, а результат превзошел
+                            все ожидания!
+                        </p>
+                    </div>
+
+                    <div className={'bg-gray-800 grid gap-4 p-8 rounded-input'}>
+                        <img src="/otzivy/4.jpg" alt=""
+                             className={'aspect-square object-cover w-1/2 mx-auto rounded-input'}/>
+                        <h1 className={'responsive-48'}>Настя Листева</h1>
+                        <p>
+                            Фотостудия Счастье стала для меня открытием! Всё продумано так, чтобы ты
+                            чувствовал себя комфортно и уверенно. Особое впечатление оставила атмосфера
+                            — здесь как будто живет радость. Фотограф был невероятно внимательным,
+                            помог подобрать позы и сделал всё, чтобы кадры выглядели естественно.
+                            Ушла с готовыми снимками и ощущением, что я на обложке журнала!
+                        </p>
+                    </div>
+                </section>
         }
     ]
     return (
@@ -105,7 +152,8 @@ const SetkaFourth = () => {
                         <Modal childrenBtn={
                             <ImageRel src={item.image} alt={item.title} text={''}/>
                         } className={'group overflow-hidden rounded-input cursor-pointer relative w-full h-full z-40'}
-                               param2={'scale-0'} param1={'scale-1'} hover={<Hover Title={item.title} text={item.text}/>}>
+                               param2={'scale-0'} param1={'scale-1'}
+                               hover={<Hover Title={item.title} text={item.text}/>}>
                             <div className={'grid gap-16'}>
                                 <h1>
                                     {item.title}
@@ -113,7 +161,6 @@ const SetkaFourth = () => {
                                 {item.children}
                             </div>
                         </Modal>
-
                     </div>)
             }
         </section>

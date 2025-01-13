@@ -1,9 +1,8 @@
-import {Navbar} from "@/app/components/features";
+import {Location, Navbar} from "@/app/components/features";
 import {BtnForm, BtnLine, BtnLineStyle, ImageRel, Input} from "@/app/components/shared";
 import {SetkaFourth, SetkaSixth, Slider, SliderTeam, StudioRooms, TakeDate} from "@/app/components/widgets";
 import Image from "next/image";
 import React from "react";
-import {Location} from "@/app/components/widgets/setkaFourth/setkaFourth";
 
 export default function Home() {
     return (
@@ -371,14 +370,11 @@ export default function Home() {
                             <div className={'w-[70%] mx-auto grid gap-8 xxxs:w-full'}>
                                 <p className={'responsive-32 font-extra'}>Остались воапросы?
                                     Заполните форму и с вами свяжутся наши специалисты</p>
-                                <Input value={'Имя'} type={'text'}/>
-                                <Input value={'Телефон'} type={'phone'}/>
+                                <Input type={'email'} value={'Ваша почта'}/>
+                                <Input type={'phone'} value={'Ваш телефон'}/>
                                 <textarea
-                                    readOnly
-                                    id="comments"
-                                    name="comments"
                                     placeholder="Введите ваши комментарии"
-                                    className="border-2 border-green-500 rounded-input p-2 w-full"
+                                    className="border-2 border-green-500 rounded-input p-2 w-full text-black"
                                 ></textarea>
                                 <div className={'inline-flex justify-center'}>
                                     <BtnForm/>
@@ -388,7 +384,6 @@ export default function Home() {
                     </section>
                     <Location/>
                 </section>
-
             </section>
         </main>
     </>

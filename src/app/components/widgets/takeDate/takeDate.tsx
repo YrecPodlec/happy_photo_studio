@@ -107,11 +107,8 @@ const TakeDate = () => {
                                     <label htmlFor="makeup-room" className="font-bold">Гримерка?</label>
                                 </div>
                                 <textarea
-                                    readOnly
-                                    id="comments"
-                                    name="comments"
                                     placeholder="Введите ваши комментарии"
-                                    className="border-2 border-green-500 rounded-input p-2 w-full"
+                                    className="border-2 border-green-500 rounded-input p-2 w-full text-black"
                                 ></textarea>
                                 <div className={'inline-flex justify-center'}>
                                     <BtnForm/>

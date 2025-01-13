@@ -15,10 +15,8 @@ const SetkaSixth = () => {
                 <div className={`relative w-full rounded-input overflow-hidden group h-full`}>
                     <ImageRel src={'/apparat/2.jpg'} alt={''} text={''}/>
                 </div>
-                <div>
-                    <Modal childrenBtn={<ImageRel src={'/apparat/3.jpg'} alt={''} text={''}/>} hover={<Hover Title={'Узнать больше'} text={''}/>} className={'relative w-full rounded-input overflow-hidden group h-full'} param1={'scale-1'} param2={'scale-0'}>
-                        as
-                    </Modal>
+                <div className={'relative w-full rounded-input overflow-hidden group h-full'}>
+                    <ImageRel src={'/apparat/3.jpg'} alt={''} text={''}/>
                 </div>
             </div>
         </section>

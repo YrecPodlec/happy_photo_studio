@@ -64,22 +64,22 @@ body {
     @apply text-80  xl:text-64 l:text-48 xs:text-32 xxs:text-24;
   }
   .responsive-64 {
-    @apply text-64  xl:text-48 l:text-32 xs:text-24 xxxxs:text-16;
+    @apply text-64  xl:text-48 l:text-32 xs:text-24;
   }
   .responsive-48 {
-    @apply text-48  xl:text-32 l:text-24 xxxs:text-12;
+    @apply text-48  xl:text-32 l:text-24;
   }
   .responsive-32 {
-    @apply text-32  xl:text-24 l:text-16 xxxs:text-12 xxxxs:text-8;
+    @apply text-32  xl:text-24 l:text-16 xxxs:text-12;
   }
   .responsive-24 {
     @apply text-24  xl:text-16 l:text-12;
   }
   .responsive-16 {
-    @apply text-16  xl:text-12 l:text-8 xxxxs:text-4;
+    @apply text-16  xl:text-12;
   }
   .responsive-12 {
-    @apply text-12  xl:text-12 l:text-12;
+    @apply text-12;
   }
 }
 .bg-gradient{

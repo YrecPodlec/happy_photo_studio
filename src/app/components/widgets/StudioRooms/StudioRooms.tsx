@@ -9,11 +9,11 @@ interface Props {
 export const Hover = ({ Title, text }: Props) => {
     return (
         <div
-            className="flex flex-col gap-4 items-center justify-between relative bottom-12 xxxs:bottom-8 h-full z-50 bg-black bg-opacity-50 py-2 group-hover:bottom-full xxxs:gap-1">
+            className="flex flex-col gap-4 items-center justify-between relative bottom-12 xxxs:bottom-8 h-full z-50 bg-black bg-opacity-50 py-2 group-hover:bottom-full xxxs:gap-1 ">
             <h2 className={'responsive-32'}>
                 {Title}
             </h2>
-            <div className="flex font-primary responsive-16 h-full justify-center items-center p-4 xxxs:p-1">
+            <div className="flex font-primary responsive-16 h-full justify-center items-center p-4 xxxs:p-1 xs:text-8">
                 <p>
                     {text}
                 </p>
