@@ -1,7 +1,5 @@
 import React from 'react';
-import {Modal} from "@/app/components/features";
 import {ImageRel} from "@/app/components/shared";
-import {Hover} from "@/app/components/widgets/StudioRooms/StudioRooms";
 
 const SetkaSixth = () => {
     return (
