@@ -248,7 +248,7 @@ export default function Home() {
                     <section id={'price'} className={'grid gap-8 cursor-default'}>
                         <h1>Прайскурант</h1>
                         <div className={'flex flex-wrap gap-8 justify-center'}>
-                            <div className="rounded-lg shadow-sm w-[16rem] xxxs:w-[8rem] bg-black">
+                            <div className="w-64 xxxs:w-[8rem] bg-black">
                                 <div className={'w-full h-64 xxxs:h-32'}>
                                     <div className={'relative w-full h-full'}>
                                         <Image src={'/price/1.jpg'} alt={''}
@@ -268,7 +268,7 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="rounded-lg shadow-sm w-[16rem] xxxs:w-[8rem] bg-black">
+                            <div className="w-64 xxxs:w-[8rem] bg-black">
                                 <div className={'w-full h-64 xxxs:h-32'}>
                                     <div className={'relative w-full h-full'}>
                                         <Image src={'/price/2.jpg'} alt={''}
@@ -288,7 +288,7 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="rounded-lg shadow-sm w-[16rem] xxxs:w-[8rem] bg-black">
+                            <div className="w-64 xxxs:w-[8rem] bg-black">
                                 <div className={'w-full h-64 xxxs:h-32'}>
                                     <div className={'relative w-full h-full'}>
                                         <Image src={'/price/3.jpg'} alt={''}
@@ -308,7 +308,7 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="rounded-lg shadow-sm w-[16rem] xxxs:w-[8rem] bg-black">
+                            <div className="w-64 xxxs:w-[8rem] bg-black">
                                 <div className={'w-full h-64 xxxs:h-32'}>
                                     <div className={'relative w-full h-full'}>
                                         <Image src={'/price/4.jpg'} alt={''}
@@ -328,7 +328,7 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="rounded-lg shadow-sm w-[16rem] xxxs:w-[8rem] bg-black">
+                            <div className="w-64 xxxs:w-[8rem] bg-black">
                                 <div className={'w-full h-64 xxxs:h-32'}>
                                     <div className={'relative w-full h-full'}>
                                         <Image src={'/price/5.jpg'} alt={''}
